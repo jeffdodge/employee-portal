@@ -22,9 +22,7 @@
         </style>
     </head>
     <body>
-    <div class="grid place-items-center pt-5">
-        <img src="https://portal.nes.solutions/wp-content/uploads/2022/03/nes_logo.png" alt="NES Solutions">
-    </div>
+
     <h1 class="grid place-items-center text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl pb-6 pt-3">
         <span class="block xl:inline">Employee Portal</span>
     </h1>
