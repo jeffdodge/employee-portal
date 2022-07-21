@@ -13,5 +13,6 @@ class SpecificLink extends Model
         'title',
         'link',
         'color',
+        'weight',
     ];
 }

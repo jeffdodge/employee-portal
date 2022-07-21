@@ -13,5 +13,6 @@ class Link extends Model
         'title',
         'link',
         'color',
+        'weight',
     ];
 }
