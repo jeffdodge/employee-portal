@@ -2,8 +2,6 @@
 
 namespace App\Nova;
 
-use Illuminate\Http\Request;
-use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Select;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
@@ -30,11 +28,11 @@ class Link extends Resource
      * @var array
      */
     public static $search = [
-        'id', 'title', 'link',
+        'title', 'link',
     ];
 
     public static $indexDefaultOrder = [
-        'id' => 'asc'
+        'weight' => 'asc'
     ];
 
     public static function indexQuery(NovaRequest $request, $query)
@@ -54,7 +52,7 @@ class Link extends Resource
     public function fields(NovaRequest $request)
     {
         return [
-            ID::make()->sortable(),
+ //           ID::make()->sortable(),
             Text::make('Title')
                 ->rules('required', 'max:255'),
             Text::make('Link')
@@ -82,8 +80,19 @@ class Link extends Resource
                     8 => 8,
                     9 => 9,
                     10 => 10,
+                    11 => 11,
+                    12 => 12,
+                    13 => 13,
+                    14 => 14,
+                    15 => 15,
+                    16 => 16,
+                    17 => 17,
+                    18 => 18,
+                    19 => 19,
+                    20 => 20,
                 ])
-                ->rules('required'),
+                ->rules('required')
+                ->sortable(),
         ];
     }
 
