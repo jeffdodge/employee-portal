@@ -15,12 +15,17 @@ use App\Models\SpecificLink;
 */
 
 Route::get('/', function () {
-    $links = Link::all()->sortBy('weight');
-    ray('hey');
+    $links = cache()->remember("links", now()->addMinutes(5), function () {
+        return Link::all()->sortBy('weight');
+    });
+
     return view('portal', ['links' => $links]);
 });
 
 Route::get('/specific', function () {
-    $links = SpecificLink::all()->sortBy('title');
+    $links = cache()->remember('specific_links', now()->addMinutes(5), function () {
+        return SpecificLink::all()->sortBy('title');
+    });
+
     return view('specific', ['links' => $links]);
 });
