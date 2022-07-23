@@ -152,4 +152,10 @@ class Link extends Resource
         cache()->forget('links');
         cache()->forget('specific_links');
     }
+
+    public static function afterDelete(NovaRequest $request, Model $model)
+    {
+        cache()->forget('links');
+        cache()->forget('specific_links');
+    }
 }
