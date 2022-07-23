@@ -33,7 +33,7 @@ class SpecificLink extends Resource
     ];
 
     public static $indexDefaultOrder = [
-        'id' => 'asc'
+        'title' => 'asc'
     ];
 
     public static function indexQuery(NovaRequest $request, $query)
@@ -54,7 +54,7 @@ class SpecificLink extends Resource
     public function fields(NovaRequest $request)
     {
         return [
-            ID::make()->sortable(),
+            // ID::make()->sortable(),
             Text::make('Title')
                 ->sortable()
                 ->rules('required', 'max:255'),
