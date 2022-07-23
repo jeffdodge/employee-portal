@@ -16,7 +16,7 @@ use App\Models\SpecificLink;
 
 Route::get('/', function () {
     $links = Link::all()->sortBy('weight');
-    ray($links);
+    ray('hey');
     return view('portal', ['links' => $links]);
 });
 
