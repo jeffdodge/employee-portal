@@ -3,6 +3,7 @@
 namespace App\Nova;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Cache;
 use Laravel\Nova\Fields\Select;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
@@ -141,21 +142,4 @@ class Link extends Resource
         return [];
     }
 
-    public static function afterCreate(NovaRequest $request, Model $model)
-    {
-        cache()->forget('links');
-        cache()->forget('specific_links');
-    }
-
-    public static function afterUpdate(NovaRequest $request, Model $model)
-    {
-        cache()->forget('links');
-        cache()->forget('specific_links');
-    }
-
-    public static function afterDelete(NovaRequest $request, Model $model)
-    {
-        cache()->forget('links');
-        cache()->forget('specific_links');
-    }
 }

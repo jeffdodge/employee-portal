@@ -15,7 +15,7 @@ use App\Models\SpecificLink;
 */
 
 Route::get('/', function () {
-    $links = cache()->remember("links", now()->addMinutes(5), function () {
+    $links = cache()->remember("links", now()->addSeconds(5), function () {
         return Link::all()->sortBy('weight');
     });
 
@@ -23,7 +23,7 @@ Route::get('/', function () {
 });
 
 Route::get('/specific', function () {
-    $links = cache()->remember('specific_links', now()->addMinutes(5), function () {
+    $links = cache()->remember('specific_links', now()->addSeconds(5), function () {
         return SpecificLink::all()->sortBy('title');
     });
 
