@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('title');
             $table->string('link');
             $table->string('color')->default('Indigo');
-            $table->integer('weight')->default(1);
+            $table->integer('weight');
             $table->timestamps();
         });
     }

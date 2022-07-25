@@ -2,6 +2,7 @@
 
 namespace App\Nova\Dashboards;
 
+use App\Nova\Cards\WelcomeHtmlCard;
 use App\Nova\Metrics\TotalLinks;
 use App\Nova\Metrics\TotalSpecificLinks;
 use Laravel\Nova\Cards\Help;
@@ -17,6 +18,7 @@ class Main extends Dashboard
     public function cards()
     {
         return [
+            new WelcomeHtmlCard,
             new TotalLinks,
             new TotalSpecificLinks,
         ];

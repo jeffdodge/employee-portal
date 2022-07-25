@@ -4,8 +4,71 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "12538d0bc9697bf7c2d0457ab6f90af7",
+    "content-hash": "7574d9deaa173e3d8755e9d1e3ed9649",
     "packages": [
+        {
+            "name": "abordage/nova-html-card",
+            "version": "0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/abordage/nova-html-card.git",
+                "reference": "eb86b00eb6939e3f58493bb15beca18c49e86a82"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/abordage/nova-html-card/zipball/eb86b00eb6939e3f58493bb15beca18c49e86a82",
+                "reference": "eb86b00eb6939e3f58493bb15beca18c49e86a82",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/nova": "^4.0",
+                "php": ">=7.4"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "nunomaduro/collision": "^5.0 || ^6.0",
+                "nunomaduro/larastan": "^1.0 || ^2.0",
+                "orchestra/testbench": "^6.0 || ^7.0",
+                "phpstan/phpstan": "^1.0",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Abordage\\HtmlCard\\CardServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Abordage\\HtmlCard\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pavel Bychko",
+                    "email": "box@abordage.dev",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A Laravel Nova card that displays any html content, e.g. lists, notifications, small custom reports",
+            "homepage": "https://github.com/abordage/nova-html-card",
+            "keywords": [
+                "laravel nova",
+                "nova card",
+                "nova html card"
+            ],
+            "support": {
+                "issues": "https://github.com/abordage/nova-html-card/issues",
+                "source": "https://github.com/abordage/nova-html-card/tree/0.2.1"
+            },
+            "time": "2022-07-06T15:15:33+00:00"
+        },
         {
             "name": "box/spout",
             "version": "v3.3.0",
