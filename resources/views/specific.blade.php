@@ -31,29 +31,17 @@
 @foreach ($links as $link)
     @php
 
-        switch($link['color']) {
-            case 'Indigo':
-                $color = 'bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500';
-                break;
-            case 'Blue':
-                $color = 'bg-blue-600 hover:bg-blue-700 focus:ring-blue-500';
-                break;
-            case 'Green':
-                $color = 'bg-green-600 hover:bg-green-700 focus:ring-green-500';
-                break;
-            case 'Yellow':
-                $color = 'bg-yellow-600 hover:bg-yellow-700 focus:ring-yellow-500';
-                break;
-            case 'Orange':
-                $color = 'bg-orange-600 hover:bg-orange-700 focus:ring-orange-500';
-                break;
-            case 'Red':
-                $color = 'bg-red-600 hover:bg-red-700 focus:ring-red-500';
-                break;
-            case 'Pink':
-                $color = 'bg-pink-600 hover:bg-pink-700 focus:ring-pink-500';
-                break;
-        }
+        $color = match($link['color']) {
+            'Indigo' => 'bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500',
+            'Blue' => 'bg-blue-600 hover:bg-blue-700 focus:ring-blue-500',
+            'Green' => 'bg-green-600 hover:bg-green-700 focus:ring-green-500',
+            'Yellow' => 'bg-yellow-600 hover:bg-yellow-700 focus:ring-yellow-500',
+            'Orange' => 'bg-orange-600 hover:bg-orange-700 focus:ring-orange-500',
+            'Red' => 'bg-red-600 hover:bg-red-700 focus:ring-red-500',
+            'Purple' => 'bg-purple-600 hover:bg-purple-700 focus:ring-purple-500',
+            'Pink' => 'bg-pink-600 hover:bg-pink-700 focus:ring-pink-500',
+        };
+
     @endphp
 
     <div class="text-center px-6">

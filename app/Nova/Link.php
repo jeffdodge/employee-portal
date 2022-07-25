@@ -7,9 +7,11 @@ use Illuminate\Support\Facades\Cache;
 use Laravel\Nova\Fields\Select;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
+use Outl1ne\NovaSortable\Traits\HasSortableRows;
 
 class Link extends Resource
 {
+    use HasSortableRows;
     /**
      * The model the resource corresponds to.
      *
@@ -70,31 +72,6 @@ class Link extends Resource
                     'Pink' => 'Pink',
                 ])
                 ->rules('required'),
-            Select::make('Weight')
-                ->options([
-                    1 => 1,
-                    2 => 2,
-                    3 => 3,
-                    4 => 4,
-                    5 => 5,
-                    6 => 6,
-                    7 => 7,
-                    8 => 8,
-                    9 => 9,
-                    10 => 10,
-                    11 => 11,
-                    12 => 12,
-                    13 => 13,
-                    14 => 14,
-                    15 => 15,
-                    16 => 16,
-                    17 => 17,
-                    18 => 18,
-                    19 => 19,
-                    20 => 20,
-                ])
-                ->rules('required')
-                ->sortable(),
         ];
     }
 
