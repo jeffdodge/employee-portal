@@ -16,6 +16,7 @@ return [
     */
 
     'name' => env('APP_NAME', 'Laravel'),
+    'specific' => env('APP_SPECIFIC', 'Laravel Specific'),
 
     /*
     |--------------------------------------------------------------------------
@@ -55,6 +56,8 @@ return [
     */
 
     'url' => env('APP_URL', 'http://localhost'),
+
+    'logo_url' => env('APP_LOGO_URL', 'http://localhost/images/logo.png'),
 
     'asset_url' => env('ASSET_URL'),
 

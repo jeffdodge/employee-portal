@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Employee Portal: Company Specific</title>
+    <title>{{ config('app.name', 'Laravel') }}: {{ config('app.specific', 'Laravel Specific') }}</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -26,7 +26,7 @@
     <img class="pt-4" src="https://portal.nes.solutions/wp-content/uploads/2022/03/nes_logo.png" alt="NES Solutions">
 </div>
 <h1 class="grid place-items-center text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl pb-6 pt-3">
-    <span class="block xl:inline">Company Specific Reports</span>
+    <span class="block xl:inline">{{ config('app.specific', 'Laravel Specific') }}</span>
 </h1>
 @foreach ($links as $link)
     @php
