@@ -35,18 +35,6 @@ class Link extends Resource
         'title', 'link',
     ];
 
-    public static $indexDefaultOrder = [
-        'weight' => 'asc'
-    ];
-
-    public static function indexQuery(NovaRequest $request, $query)
-    {
-        if (empty($request->get('orderBy'))) {
-            $query->getQuery()->orders = [];
-            return $query->orderBy(key(static::$indexDefaultOrder), reset(static::$indexDefaultOrder));
-        }
-        return $query;
-    }
     /**
      * Get the fields displayed by the resource.
      *
