@@ -23,7 +23,7 @@
 </head>
 <body>
 <div class="grid place-items-center">
-    <img class="pt-4" src="https://portal.nes.solutions/wp-content/uploads/2022/03/nes_logo.png" alt="NES Solutions">
+    <img class="pt-4" src="{{ config('app.logo_url', 'logo.png') }}" alt="{{ config('app.name', 'Laravel') }}">
 </div>
 <h1 class="grid place-items-center text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl pb-6 pt-3">
     <span class="block xl:inline">{{ config('app.specific', 'Laravel Specific') }}</span>
