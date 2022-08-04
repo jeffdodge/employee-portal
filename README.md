@@ -1,6 +1,6 @@
 ## Employee Link System
 
-Link system for employee portal.
+Custom link system for employee portal.
 
 # Developer Information
 
