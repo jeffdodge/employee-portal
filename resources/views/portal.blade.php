@@ -22,9 +22,11 @@
         </style>
     </head>
     <body>
+    @if (config('app.logo_url'))
     <div class="grid place-items-center">
         <img class="pt-4" src="{{ config('app.logo_url', 'logo.png') }}" alt="{{ config('app.name', 'Laravel') }}">
     </div>
+    @endif
     <h1 class="grid place-items-center text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl pb-6 pt-3">
         <span class="block xl:inline">{{ config('app.name', 'Laravel') }}</span>
     </h1>
