@@ -19,7 +19,7 @@ jobs:
     - name: Copy .env
       run: php -r "file_exists('.env') || copy('.env.example', '.env');"
     - name: Add License for Nova (to run properly)
-      run: composer config http-basic.nova.laravel.com jeff@jeffdodge.com PTkjg8FTD7SNKePUFVRpS06r1mToXwEgfKoGZo52IphDmlhDY0
+      run: composer config http-basic.nova.laravel.com jeff@jeffdodge.com ${{ secrets.NOVA_KEY }}
     - name: Update Composer
       run: composer update
     - name: Install Dependencies
