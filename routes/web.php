@@ -23,3 +23,7 @@ Route::get('/specific', function () {
     $links = SpecificLink::all()->sortBy('title');
     return view('specific', ['links' => $links]);
 });
+
+Route::get('/laravel-test', function () {
+    return 'Test Passed!';
+});

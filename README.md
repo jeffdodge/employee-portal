@@ -4,7 +4,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/jeffdodge/employee-portal)
 ![Lines of code](https://img.shields.io/tokei/lines/github/jeffdodge/employee-portal)
 
-Custom link system for employee portal. 
+This is a custom 
 
 # Developer Information
 
