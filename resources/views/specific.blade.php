@@ -48,7 +48,7 @@
 
     <div class="text-center px-6">
         <div class="p-1">
-            <div class="my-1"><a href="{{ $link['link'] }}"><button type="button" class="items-center px-5 py-2 border border-transparent text-base font-medium rounded-full shadow-sm text-white focus:outline-none focus:ring-2 focus:ring-offset-2 @php echo $color; @endphp w-96">{{ $link['title'] }}</button></a></div>
+            <div class="my-1"><a href="{{ $link['link'] }}"><button type="button" class="items-center px-5 py-2 border border-transparent text-base font-medium rounded-full shadow-sm text-white focus:outline-none focus:ring-2 focus:ring-offset-2 {{ $color }} w-96">{{ $link['title'] }}</button></a></div>
         </div>
     </div>
 @endforeach
