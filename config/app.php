@@ -17,6 +17,7 @@ return [
 
     'name' => env('APP_NAME', 'Laravel'),
     'specific' => env('APP_SPECIFIC', 'Laravel Specific'),
+    'manager' => env('APP_MANAGER', 'Laravel Manager'),
 
     /*
     |--------------------------------------------------------------------------

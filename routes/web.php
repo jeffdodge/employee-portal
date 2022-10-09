@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Models\Link;
 use App\Models\SpecificLink;
+use App\Models\Manager;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,6 +23,11 @@ Route::get('/', function () {
 Route::get('/specific', function () {
     $links = SpecificLink::all()->sortBy('title');
     return view('specific', ['links' => $links]);
+});
+
+Route::get('/manager', function () {
+    $links = Manager::all()->sortBy('weight');
+    return view('manager', ['links' => $links]);
 });
 
 Route::get('/laravel-test', function () {
