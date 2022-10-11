@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+(<!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
@@ -32,7 +32,6 @@
 </h1>
 @foreach ($links as $link)
     @php
-
         $color = match($link['color']) {
             'Indigo' => 'bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500',
             'Blue' => 'bg-blue-600 hover:bg-blue-700 focus:ring-blue-500',
@@ -43,7 +42,6 @@
             'Purple' => 'bg-purple-600 hover:bg-purple-700 focus:ring-purple-500',
             'Pink' => 'bg-pink-600 hover:bg-pink-700 focus:ring-pink-500',
         };
-
     @endphp
 
     <div class="text-center px-6">
