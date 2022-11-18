@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a81ecdf5e780081721c8c8cea1d51592",
+    "content-hash": "995d99c67b6f945ffbc2357cc038cbbc",
     "packages": [
         {
             "name": "abordage/nova-html-card",

@@ -15,9 +15,9 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
-    'specific' => env('APP_SPECIFIC', 'Laravel Specific'),
-    'manager' => env('APP_MANAGER', 'Laravel Manager'),
+    'name' => env('APP_NAME', 'Employee Portal'),
+    'specific' => env('APP_SPECIFIC', 'Specific Reports'),
+    'manager' => env('APP_MANAGER', 'Manager Portal'),
 
     /*
     |--------------------------------------------------------------------------
@@ -200,7 +200,7 @@ return [
         App\Providers\NovaServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         App\Providers\TelescopeServiceProvider::class,
-
+        Spatie\EloquentSortable\EloquentSortableServiceProvider::class,
     ],
 
     /*
